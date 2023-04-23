@@ -9,7 +9,10 @@ GET http://localhost:3000/contacts/6444a5c8b179516f314c6e33 HTTP/1.1
 GET http://localhost:3000/contacts/6444a5c8b179516f314c6e34 HTTP/1.1
 
 ###
-GET https://cse-341-ricardo.onrender.com HTTP/1.1
+GET https://cse-341-ricardo.onrender.com//contacts HTTP/1.1
 
 ###
-GET https://cse-341-ricardo.onrender.com/lastname HTTP/1.1
+GET https://cse-341-ricardo.onrender.com/contacts/6444a5c8b179516f314c6e33 HTTP/1.1
+
+###
+GET https://cse-341-ricardo.onrender.com/contacts/6444a5c8b179516f314c6e34 HTTP/1.1
