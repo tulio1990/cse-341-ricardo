@@ -2,6 +2,46 @@
 
 GET http://localhost:3000/contacts HTTP/1.1
 
+### POST
+POST http://localhost:3000/contacts HTTP/1.1
+content-type: application/json
+
+{
+    "firstName" : "Marcos", 
+    "lastName" : "Banegas", 
+    "email" : "marcos.banegas@gmail.com", 
+    "favoriteColor" : "White", 
+    "birthday" : "1980-04-05T00:00:00.000Z"
+}
+
+###
+POST http://localhost:3000/contacts HTTP/1.1
+content-type: application/json
+
+{
+    "firstName" : "Kelvin", 
+    "lastName" : "Oyuela", 
+    "email" : "keloyuela@gmail.com", 
+    "favoriteColor" : "orange", 
+    "birthday" : "1988-03-16T00:00:00.000Z"
+}
+
+
+### PUT
+PUT http://localhost:3000/contacts/64475243698737a194978ead HTTP/1.1
+content-type: application/json
+
+{
+    "firstName":"Claudia", 
+    "lastName":"Izaguirre", 
+    "email":"claudia@gmail.com", 
+    "favoriteColor":"purple", 
+    "birthday":"1995-07-04T00:00:00.000Z"
+}
+
+### DELETE 
+DELETE http://localhost:3000/contacts/64475243698737a194978ead HTTP/1.1
+
 ###
 GET http://localhost:3000/contacts/6444a5c8b179516f314c6e33 HTTP/1.1
 
@@ -16,3 +56,31 @@ GET https://cse-341-ricardo.onrender.com/contacts/6444a5c8b179516f314c6e33 HTTP/
 
 ###
 GET https://cse-341-ricardo.onrender.com/contacts/6444a5c8b179516f314c6e34 HTTP/1.1
+
+### POST
+POST https://cse-341-ricardo.onrender.com/contacts HTTP/1.1
+content-type: application/json
+
+{
+    "firstName" : "Magda", 
+    "lastName" : "Izaguirre", 
+    "email" : "magda@gmail.com", 
+    "favoriteColor" : "yellow", 
+    "birthday" : "1957-11-13T00:00:00.000Z"
+}
+
+
+### PUT
+PUT https://cse-341-ricardo.onrender.com/contacts/64475866fb9872312c790b8b HTTP/1.1
+content-type: application/json
+
+{
+    "firstName":"Claudia", 
+    "lastName":"Izaguirre", 
+    "email":"claudia@gmail.com", 
+    "favoriteColor":"purple", 
+    "birthday":"1995-07-04T00:00:00.000Z"
+}
+
+### DELETE 
+DELETE https://cse-341-ricardo.onrender.com/contacts/6447590ffb9872312c790b8c HTTP/1.1
