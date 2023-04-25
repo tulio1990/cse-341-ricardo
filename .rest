@@ -26,6 +26,18 @@ content-type: application/json
     "birthday" : "1988-03-16T00:00:00.000Z"
 }
 
+### 64475b8481170373ccb94fa5
+POST http://localhost:3000/contacts HTTP/1.1   
+content-type: application/json
+
+{
+    "firstName" : "Fer", 
+    "lastName" : "Correa", 
+    "email" : "keloyuela@gmail.com", 
+    "favoriteColor" : "orange", 
+    "birthday" : "1988-03-16T00:00:00.000Z"
+}
+
 
 ### PUT
 PUT http://localhost:3000/contacts/64475243698737a194978ead HTTP/1.1
@@ -40,7 +52,7 @@ content-type: application/json
 }
 
 ### DELETE 
-DELETE http://localhost:3000/contacts/64475243698737a194978ead HTTP/1.1
+DELETE http://localhost:3000/contacts/64475b8481170373ccb94fa5 HTTP/1.1
 
 ###
 GET http://localhost:3000/contacts/6444a5c8b179516f314c6e33 HTTP/1.1
