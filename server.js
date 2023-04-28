@@ -5,7 +5,7 @@ const mongodb = require('./db/conection');
 const port = process.env.PORT || 3000;
 
 app.use('/', require('./routes'));
-app.use(bodyParser.json()).use((req, res, next) => {
+app.use('/', bodyParser.json()).use((req, res, next) => {
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader(
     'Access-Control-Allow-Headers',
